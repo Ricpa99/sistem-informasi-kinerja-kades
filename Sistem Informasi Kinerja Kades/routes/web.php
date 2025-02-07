@@ -15,6 +15,12 @@ use Inertia\Inertia;
     //     'phpVersion' => PHP_VERSION,
     // ]);
 // });
+Route::post('/file', function(Request $request){
+    $a = explode($request->file('img'),'.');
+    ddd($request->file('img')->store('image'));
+    return $request->file()->originalName();
+})->name('file');
+Route::get('/admin', [HomeController::class, 'admin'])->name('admin');
 Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/desa/{kabupaten:slug}', [HomeController::class, 'desa'])->name('home.desa');
 Route::get('/desa', function(Request $request){

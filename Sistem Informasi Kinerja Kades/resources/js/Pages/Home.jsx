@@ -1,28 +1,30 @@
 import React, { useState } from 'react'
 import Navbar from '@/Layouts/Navbar'
-import { Head, Link, usePage, } from '@inertiajs/react'
+import { Head, Link, useForm, usePage, } from '@inertiajs/react'
 import FmdGoodRoundedIcon from '@mui/icons-material/FmdGoodRounded';
 import CabinRoundedIcon from '@mui/icons-material/CabinRounded';
-
+// import {asset} from './Asset'
 export default function ({title, data}) {
   // console.log(data.data.map(e => e.kecamatan.map(el => el.id_kecamatan)))
-  console.log(data.data);
+  
+  
+  const asset = (patc) => {
+    return `${window.location.origin}/${patc}`
+  }
   const result = usePage().props
   return (
     <div>
      <Head title={title}/>
      <Navbar>
-      <div className={`flex w-full gap-5 flex-wrap justify-center max-w-7xl mt-8`}>
+      <div className={`flex w-full gap-6 flex-wrap justify-center max-w-7xl mt-8`}>
                <div className={`${result && 'hidden'} text-6xl text-slate-300 text-center my-auto max-md:text-base mt-20 max-md:mt-10`}>404| NOT FOUND</div>
           {data.data.map((el,i) => {
             return (
               <>
-                <div key={i} className="card bg-base-100 w-96 shadow-xl hover:scale-105 ease-out 
+                <div key={i} className="card mt-3 bg-base-100 w-96 shadow-xl hover:scale-105 ease-out 
                  transition- duration-150">
                     <figure>
-                      <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                      alt="Shoes" />
+                      <img src={`storage/image/${el.id}.png`} height={`100`}/>
                     </figure>
                     <div className="card-body">
                         <p className="card-title font-bold">

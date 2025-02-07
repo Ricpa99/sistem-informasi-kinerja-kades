@@ -11,6 +11,12 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    public function admin(){
+        return inertia('Admin', [
+            'title' => 'Admin'
+        ]);
+    }
+
     public function home()
     {
         return inertia('Home', [
