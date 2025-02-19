@@ -8,7 +8,8 @@ Saat ini, aplikasi masih dalam tahap pengembangan dan belum memiliki fitur pengo
 
 - **UI yang digunakan:** React.js, TailwindCss
 - **Component yang digunakan:** DaisyUI dan MaterialUI, dan React icon
-- **Pencarian:** fitur perncarian berdasarkan kata kunci dan mencari tahun berdasarkan hasil kinerjsa kades dari tahun ke tahun
+- **Pencarian:** fitur perncarian berdasarkan kata kunci dan mencari tahun berdasarkan hasil kinerjsa kades dari tahun ke tahun.
+- **Pagination::** Menampilkan beberapa data di halaman tertentu.
   
 
 ## Teknologi yang Digunakan
@@ -77,5 +78,9 @@ Gambar yang saya gunakan di sini menggunakan API dari unsplash akan tetap selalu
 
 3. **Halaman kinerja kades dan dapat mencari kinerja kades berdasarkan tahun yang dicari.**
    ![image alt](https://github.com/Ricpa99/sistem-informasi-kinerja-kades/blob/73442fc26ea311696454249629b92ec6072bdef8/img/kinerja_kades.png)
-    
+
+## 📝 Note
+Ubah tabel tahun di database mysql agar dapat mencari atau menampilkan gambar atau data project kades sperti gambar di bawah ini isi semua dan untuk tahun bebas mau tahun berapa di karenakan Belom ada CRUD unutk pengolahan Backend jadi sementara manual unutk menghindari error seperti gambar dibawah ini. sesuaikan id nya di sambung titik dan di belakangnya tahun contoh 3.2020, 3.2025 dengan melihat id_project berapa di karenakan id_project 3 maka 3.2025.
+
+![image alt](https://github.com/Ricpa99/sistem-informasi-kinerja-kades/blob/8dbc420043735b3a587edde3f409d5d5798a12ce/img/database.png)
     
