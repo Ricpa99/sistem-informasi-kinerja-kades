@@ -14,16 +14,14 @@ Saat ini, aplikasi masih dalam tahap pengembangan dan belum memiliki fitur pengo
 
 ## Teknologi yang Digunakan
 
-- **Backend:**  
-  PHP dengan framework Laravel  
+- **framework:**  
+  Laravel11  
 - **Frontend:**  
   HTML, CSS, JavaScript, tailwindCss, react.js  
 - **Database:**  
   MySQL/MariaDB
 - **API**
-  Unsplash  
-- **Lainnya:**  
-  Tools pendukung seperti Composer dan NPM
+  Unsplash
 
 ## 🔧 Instalasi
 
@@ -33,7 +31,7 @@ Pastikan sistem Anda telah terinstal:
 - PHP (versi 7.x atau lebih tinggi)
 - Composer
 - MySQL/MariaDB
-- Node.js & NPM (jika menggunakan asset build untuk frontend)
+- Node.js & NPM
 - xampp
 
 ### Langkah-langkah Instalasi
@@ -66,7 +64,7 @@ Pastikan sistem Anda telah terinstal:
     ```
 5. **Build asset frontend**
     ```sh
-    npm run de
+    npm run dev
     ```
 ## 📸 screenshot
 Gambar yang saya gunakan di sini menggunakan API dari unsplash akan tetap selalu sama dengan halaman yang lainnya terkecuali home.
