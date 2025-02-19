@@ -22,9 +22,9 @@ Saat ini, aplikasi masih dalam tahap pengembangan dan belum memiliki fitur pengo
 - **Lainnya:**  
   Tools pendukung seperti Composer dan NPM
 
-## Instalasi
+## 🔧 Instalasi
 
-### Prasyarat
+### 🔗 Prasyarat
 
 Pastikan sistem Anda telah terinstal:
 - PHP (versi 7.x atau lebih tinggi)
@@ -56,3 +56,23 @@ Pastikan sistem Anda telah terinstal:
     Migrasi dan delete tabel setelah itu membuat tabel baru
     ```sh
     php artisan migrate:fresh --seed
+    ```
+4. **Jalankan pengembangan server**
+    ```bash
+    php artisan serve
+    ```
+5. **Build asset frontend**
+    ```sh
+    npm run de
+    ```
+## 📸 screenshot
+1. **Halaman home**
+   ![image alt](https://github.com/Ricpa99/sistem-informasi-kinerja-kades/blob/73442fc26ea311696454249629b92ec6072bdef8/img/home.png)
+
+2. **Halaman terdapat ada berapa desa dalam satu kabupaten**
+   ![iamge alt](https://github.com/Ricpa99/sistem-informasi-kinerja-kades/blob/73442fc26ea311696454249629b92ec6072bdef8/img/desa.png)
+
+3. **Halaman kinerja kades dan dapat mencari kinerja kades berdasarkan tahun yang dicari**
+   ![image alt](https://github.com/Ricpa99/sistem-informasi-kinerja-kades/blob/73442fc26ea311696454249629b92ec6072bdef8/img/kinerja_kades.png)
+    
+    
