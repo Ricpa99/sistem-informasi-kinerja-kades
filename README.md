@@ -80,7 +80,6 @@ Gambar yang saya gunakan di sini menggunakan API dari unsplash akan tetap selalu
    ![image alt](https://github.com/Ricpa99/sistem-informasi-kinerja-kades/blob/73442fc26ea311696454249629b92ec6072bdef8/img/kinerja_kades.png)
 
 ## 📝 Note
-Ubah tabel tahun di database mysql agar dapat mencari atau menampilkan gambar atau data project kades sperti gambar di bawah ini isi semua dan untuk tahun bebas mau tahun berapa di karenakan Belom ada CRUD unutk pengolahan Backend jadi sementara manual unutk menghindari error seperti gambar dibawah ini. sesuaikan id nya di sambung titik dan di belakangnya tahun contoh 3.2020, 3.2025 dengan melihat id_project berapa di karenakan id_project 3 maka 3.2025.
-
+Ubah tabel tahun di database MySQL agar dapat mencari atau menampilkan gambar atau data proyek Kades seperti pada contoh gambar di bawah ini. Isi semua data, dan untuk tahun bisa bebas (sesuai kebutuhan), karena saat ini belum ada fitur CRUD untuk pengolahan backend. Oleh karena itu, sementara data dimasukkan secara manual untuk menghindari error. Sesuaikan format ID dengan menyambungkan id_project dan tahun menggunakan titik (.). Contohnya, jika id_project adalah 3, maka format tahun yang digunakan adalah 3.2020 atau 3.2025, sesuai dengan id_project yang bersangkutan.
 ![image alt](https://github.com/Ricpa99/sistem-informasi-kinerja-kades/blob/8dbc420043735b3a587edde3f409d5d5798a12ce/img/database.png)
     
