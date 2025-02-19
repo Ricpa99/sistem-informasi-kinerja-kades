@@ -39,20 +39,38 @@ class HomeController extends Controller
 
     public function detailDesa(Request $request, Desa $desa)
     {
-        $y = Carbon::now()->year;
-        $id_tahun=  $desa->id . '.' . $y;
-        return inertia('Desa', [
-            'title' => 'Home',
-            'kabupaten' => $request->kabupaten,
-            'kecamatan' => $request->kecamatan,
-            'project' => Project_Kades::where('tahun', $id_tahun)->get(),
-            'dataDesa' => $desa->load('project')
-        ]);
+        // return $request->tahun;
+        if($request->tahun == null){
+            $year = Carbon::now()->year;
+            $id_tahun=  $desa->id . '.' . $year;
+            return inertia('Desa', [
+                'title' => 'Home',
+                'kabupaten' => $request->kabupaten,
+                'kecamatan' => $request->kecamatan,
+                'project' => Project_Kades::where('tahun', $id_tahun)->get(),
+                'dataDesa' => $desa->load('project'),
+                'slug' => $desa->slug,
+                'tahun' => $request->tahun
+            ]);
+        }else{
+            $year = $request->tahun;
+            $id_tahun=  $desa->id . '.' . $year;
+            return inertia('Desa', [
+                'title' => 'Home',
+                'kabupaten' => $request->kabupaten,
+                'kecamatan' => $request->kecamatan,
+                'project' => Project_Kades::where('tahun', $id_tahun)->get(),
+                'dataDesa' => $desa->load('project'),
+                'slug' => $desa->slug,
+                'tahun' => $request->tahun
+            ]);
+        }
+        
     }
 
     public function desa(Kabupaten $kabupaten)
     {
-        $dataDesa = Desa::where('id_desa', $kabupaten->id)->get();
+        $dataDesa = Desa::where('id_desa', $kabupaten->id)->paginate(2);
         return inertia('Desas', [
             'title' => 'Home',
             'data' => $dataDesa,

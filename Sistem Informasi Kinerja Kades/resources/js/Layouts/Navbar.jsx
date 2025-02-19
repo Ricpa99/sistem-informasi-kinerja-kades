@@ -1,13 +1,11 @@
 import React from 'react'
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
-import Footer from './Footer';
-import Pagination from '@/Components/Pagination';
 import { useForm, usePage } from '@inertiajs/react';
 
 
 
-export default function Navbar({children}) {
-  const link = usePage().component
+export default function Navbar({children, next, page, prev, nexthome, prevhome, pagehome}) {
+  
   const {errors, setData, get} = useForm()
   const submit = (e) =>{
     e.preventDefault();
@@ -65,11 +63,7 @@ export default function Navbar({children}) {
       </div>
       <div className="min-h-screen w-full flex flex-wrap justify-center items-start p-6">
           {children}
-          <div className={`${link == 'Desa' ? 'hidden' : ''}`}>
-          <Pagination component={link} />
-          </div>
       </div>
-      <Footer/>
     </>
   )
 }

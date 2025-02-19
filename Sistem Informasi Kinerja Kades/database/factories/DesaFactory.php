@@ -20,6 +20,10 @@ class DesaFactory extends Factory
     {
         return [
             'misi1' => fake()->sentence(rand(1,3)),
+            'misi2' => fake()->sentence(rand(1,3)),
+            'misi3' => fake()->sentence(rand(1,3)),
+            'misi4' => fake()->sentence(rand(1,3)),
+            'misi5' => fake()->sentence(rand(1,3)),
             'visi' => fake()->sentence(rand(1,3)),
             'slug' => fake()->slug(1,true),
             'id_desa' => mt_rand(1,15),

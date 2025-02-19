@@ -17,10 +17,12 @@ class Project_KadesFactory extends Factory
      */
     public function definition(): array
     {
+        static $year = 2020;
         return [
             'id_project' => mt_rand(1,9),
-            'project' => fake()->sentence(rand(1,2)),
-            'tahun' => '.' . random_int(1990,2030),
+            'nama_project' => fake()->sentence(rand(1,2)),
+            'deskripsi' => fake()->paragraph(),
+            'tahun' => '.' . ++$year,
             'anggaran' => 'Rp. ' . rand(1,100) . '.' . rand(100,900) . '.' . '000'
         ];
     }

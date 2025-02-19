@@ -14,7 +14,8 @@ return new class extends Migration
         Schema::create('project__kades', function (Blueprint $table) {
             $table->id();
             $table->foreignId('id_project');
-            $table->string('project');
+            $table->string('nama_project');
+            $table->string('deskripsi');
             $table->string('tahun');
             $table->string('anggaran');
             $table->timestamps();

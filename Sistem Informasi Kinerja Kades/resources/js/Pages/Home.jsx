@@ -3,11 +3,16 @@ import Navbar from '@/Layouts/Navbar'
 import { Head, Link, useForm, usePage, } from '@inertiajs/react'
 import FmdGoodRoundedIcon from '@mui/icons-material/FmdGoodRounded';
 import CabinRoundedIcon from '@mui/icons-material/CabinRounded';
+import Pagination from '@/Components/Pagination';
+import Footer from '../Layouts/Footer';
 // import {asset} from './Asset'
 export default function ({title, data}) {
   // console.log(data.data.map(e => e.kecamatan.map(el => el.id_kecamatan)))
-  
-  
+    const prev = usePage().props.data.prev_page_url;
+    const next = usePage().props.data.next_page_url;
+    const page = usePage().props.data.current_page;
+    console.log(usePage().props);
+    
   const asset = (patc) => {
     return `${window.location.origin}/${patc}`
   }
@@ -48,6 +53,10 @@ export default function ({title, data}) {
           })}
       </div>
      </Navbar>
+     <div className='w-full flex justify-center mb-5'>
+        <Pagination prev={prev} next={next} page={page}/>    
+    </div>
+    <Footer/>
     </div>
   )
 }
