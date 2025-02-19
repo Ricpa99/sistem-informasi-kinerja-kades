@@ -87,7 +87,7 @@ Gambar yang saya gunakan di sini menggunakan API dari unsplash akan tetap selalu
 
 ![image alt](https://github.com/Ricpa99/sistem-informasi-kinerja-kades/blob/8dbc420043735b3a587edde3f409d5d5798a12ce/img/database.png)
     
-2. Pindahkan atau salin folder image ke folder storage/app/public dan setelah itu paste, selesai memindahkan folder link folder agar dapat di akses secara publicdengan menjalankan file perintah berikut.
+2. Pindahkan atau salin folder image ke folder storage/app/public dan setelah itu paste, selesai memindahkan folder link folder agar dapat di akses secara public dengan menjalankan perintah berikut di terminal.
 ```sh
 php artisan storage:link
 ```
