@@ -8,7 +8,7 @@ Saat ini, aplikasi masih dalam tahap pengembangan dan belum memiliki fitur pengo
 
 - **UI yang digunakan:** React.js, TailwindCss
 - **Component yang digunakan:** DaisyUI dan MaterialUI, dan React icon
-- **Pencarian:** fitur perncarian berdasarkan kata kunci dan mencari tahun berdasarkan hasil kinerjsa kades dari tahun ke tahun.
+- **Pencarian:** fitur perncarian berdasarkan kata kunci dan mencari tahun berdasarkan hasil kinerja kades dari tahun ke tahun.
 - **Pagination::** Menampilkan beberapa data di halaman tertentu.
   
 
