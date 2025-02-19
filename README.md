@@ -16,9 +16,11 @@ Saat ini, aplikasi masih dalam tahap pengembangan dan belum memiliki fitur pengo
 - **Backend:**  
   PHP dengan framework Laravel  
 - **Frontend:**  
-  HTML, CSS, JavaScript  
+  HTML, CSS, JavaScript, tailwindCss, react.js  
 - **Database:**  
-  MySQL/MariaDB  
+  MySQL/MariaDB
+- **API**
+  Unsplash  
 - **Lainnya:**  
   Tools pendukung seperti Composer dan NPM
 
@@ -66,13 +68,14 @@ Pastikan sistem Anda telah terinstal:
     npm run de
     ```
 ## 📸 screenshot
-1. **Halaman home**
+Gambar yang saya gunakan di sini menggunakan API dari unsplash akan tetap selalu sama dengan halaman yang lainnya terkecuali home.
+1. **Halaman home yang menampilkan nama-nama kota atau kabupaten**
    ![image alt](https://github.com/Ricpa99/sistem-informasi-kinerja-kades/blob/73442fc26ea311696454249629b92ec6072bdef8/img/home.png)
 
-2. **Halaman terdapat ada berapa desa dalam satu kabupaten**
+2. **Halaman yang menampilkan ada berapa desa dalam satu kabupaten.**
    ![iamge alt](https://github.com/Ricpa99/sistem-informasi-kinerja-kades/blob/73442fc26ea311696454249629b92ec6072bdef8/img/desa.png)
 
-3. **Halaman kinerja kades dan dapat mencari kinerja kades berdasarkan tahun yang dicari**
+3. **Halaman kinerja kades dan dapat mencari kinerja kades berdasarkan tahun yang dicari.**
    ![image alt](https://github.com/Ricpa99/sistem-informasi-kinerja-kades/blob/73442fc26ea311696454249629b92ec6072bdef8/img/kinerja_kades.png)
     
     
