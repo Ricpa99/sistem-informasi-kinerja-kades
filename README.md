@@ -20,7 +20,7 @@ Saat ini, aplikasi masih dalam tahap pengembangan dan belum memiliki fitur pengo
   HTML, CSS, JavaScript, tailwindCss, react.js  
 - **Database:**  
   MySQL/MariaDB
-- **API**
+- **API:**
   Unsplash
 
 ## 🔧 Instalasi
@@ -67,7 +67,7 @@ Pastikan sistem Anda telah terinstal:
     npm run dev
     ```
 ## 📸 screenshot
-Gambar yang saya gunakan di sini menggunakan API dari unsplash akan tetap selalu sama dengan halaman yang lainnya terkecuali home.
+Gambar yang saya gunakan di sini menggunakan API dari unsplash akan tetap selalu sama dengan halaman yang lainnya terkecuali home saya menggunakan axios untuk fetching API unplas.
 1. **Halaman home yang menampilkan nama-nama kota atau kabupaten**
    ![image alt](https://github.com/Ricpa99/sistem-informasi-kinerja-kades/blob/73442fc26ea311696454249629b92ec6072bdef8/img/home.png)
 
